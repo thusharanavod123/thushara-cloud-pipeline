@@ -16,7 +16,7 @@ jobs:
         with:
           # DO NOT change these words. Leave them exactly like this:
           username: ${{ secrets.DOCKER_USERNAME }}
-          token: ${{ secrets.DOCKER_TOKEN }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and Push Image
         uses: docker/build-push-action@v5
